@@ -19,4 +19,4 @@ RUN chmod -R ugo+rX /var/www/html/cloudera-repos/sqoop-connectors
 WORKDIR /var/www/html
 
 #Start Python Server
-ENTRYPOINT ENTRYPOINT ["python", "-m http.server"]
+ENTRYPOINT ["python", "-m http.server"]
