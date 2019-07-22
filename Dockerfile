@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:2
 
 #Make hosting folder
 RUN mkdir -p /var/www/html/cloudera-repos
@@ -19,4 +19,4 @@ RUN chmod -R ugo+rX /var/www/html/cloudera-repos/sqoop-connectors
 WORKDIR /var/www/html
 
 #Start Python Server
-ENTRYPOINT ["python", "-m http.server"]
+ENTRYPOINT ["python -m SimpleHTTPServer 8900"]
